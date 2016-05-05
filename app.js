@@ -16,11 +16,11 @@ $(document).ready(function(){
 			nextDot = $('.dot').first();
 		}
 
-		currentSlide.fadeOut(200).removeClass('current-slide');
+		currentSlide.fadeOut(0).removeClass('current-slide');
 		nextSlide.fadeIn(200).addClass('current-slide');
 
-		currentDot.fadeOut(200).removeClass('current-dot');
-		nextDot.fadeIn(200).addClass('current-dot');
+		currentDot.removeClass('current-dot');
+		nextDot.addClass('current-dot');
 	});
 
 	$('.arrow-prev').click(function(){
@@ -36,30 +36,30 @@ $(document).ready(function(){
 			prevDot = $('.dot').last();
 		}
 
-		currentSlide.fadeOut(200).removeClass('current-slide');
+		currentSlide.fadeOut(0).removeClass('current-slide');
 		prevSlide.fadeIn(200).addClass('current-slide');
 
-		currentDot.fadeOut(200).removeClass('current-dot');
-		prevDot.fadeIn(200).addClass('current-dot');
+		currentDot.removeClass('current-dot');
+		prevDot.addClass('current-dot');
 	});
 
 	$('#about').click(function(){
-		$('.current-slide').fadeOut(200).removeClass('current-slide');
+		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.about').fadeIn(200).addClass('current-slide');
 	});
 
 	$('#education').click(function(){
-		$('.current-slide').fadeOut(200).removeClass('current-slide');
+		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.education').fadeIn(200).addClass('current-slide');
 	});
 
 	$('#work').click(function(){
-		$('.current-slide').fadeOut(200).removeClass('current-slide');
+		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.work').fadeIn(200).addClass('current-slide');
 	});
 
 	$('#skills').click(function(){
-		$('.current-slide').fadeOut(200).removeClass('current-slide');
+		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.skills').fadeIn(200).addClass('current-slide');
 	});
 });
