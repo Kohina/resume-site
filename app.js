@@ -1,10 +1,4 @@
 $(document).ready(function(){
-	$('.more').click(function () {
-		$('.menu-item').show();
-		$('.more').hide();
-		$('.less').show();
-	});
-
 	$('.object').click(function(){
 		$(this).children('.description').toggle(100);
 	});
@@ -47,6 +41,27 @@ $(document).ready(function(){
 
 		currentDot.removeClass('current-dot');
 		prevDot.addClass('current-dot');
+	});
+
+	$('.select-menu').change(function(){
+		var value = $(this).val();
+
+		if(value == 'about'){
+			$('.current-slide').fadeOut(0).removeClass('current-slide');
+			$('.about').fadeIn(200).addClass('current-slide');
+		}
+		if(value == 'education'){
+			$('.current-slide').fadeOut(0).removeClass('current-slide');
+			$('.education').fadeIn(200).addClass('current-slide');
+		}
+		if(value == 'work'){
+			$('.current-slide').fadeOut(0).removeClass('current-slide');
+			$('.work').fadeIn(200).addClass('current-slide');
+		}
+		if(value == 'skills'){
+			$('.current-slide').fadeOut(0).removeClass('current-slide');
+			$('.skills').fadeIn(200).addClass('current-slide');
+		}
 	});
 
 	$('#about').click(function(){
