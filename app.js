@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	$('.more').click(function () {
+		$('.menu-item').show();
+		$('.more').hide();
+		$('.less').show();
+	});
+
 	$('.object').click(function(){
 		$(this).children('.description').toggle(100);
 	});

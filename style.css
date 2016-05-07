@@ -69,8 +69,45 @@ body{
 	padding-top: 5px;
 }
 
-.menu > li {
-	display: inline;
+@media screen and (min-width: 700px) {
+	.menu li {
+		display: inline;
+	}
+
+	.menu li.more {
+		display: none;
+	}
+
+	.menu a.less, a.more {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.menu li.menu-current {
+		display: inline;
+	}
+
+	.menu li.view {
+		display: inline;
+	}
+
+	.menu li {
+		display: none;
+	}
+
+	.menu li.expand {
+		display: inline;
+		font-weight: bold;
+	}
+
+	.menu a.less {
+		display: none;
+	}
+
+	.menu a.more {
+		display: inline;
+	}
 }
 
 .menu a {
