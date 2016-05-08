@@ -49,39 +49,63 @@ $(document).ready(function(){
 		if(value == 'about'){
 			$('.current-slide').fadeOut(0).removeClass('current-slide');
 			$('.about').fadeIn(200).addClass('current-slide');
+
+			$('.current-dot').removeClass('current-dot');
+			$('.about-dot').addClass('current-dot');
 		}
 		if(value == 'education'){
 			$('.current-slide').fadeOut(0).removeClass('current-slide');
 			$('.education').fadeIn(200).addClass('current-slide');
+
+			$('.current-dot').removeClass('current-dot');
+			$('.education-dot').addClass('current-dot');
 		}
 		if(value == 'work'){
 			$('.current-slide').fadeOut(0).removeClass('current-slide');
 			$('.work').fadeIn(200).addClass('current-slide');
+
+			$('.current-dot').removeClass('current-dot');
+			$('.work-dot').addClass('current-dot');
 		}
 		if(value == 'skills'){
 			$('.current-slide').fadeOut(0).removeClass('current-slide');
 			$('.skills').fadeIn(200).addClass('current-slide');
+
+			$('.current-dot').removeClass('current-dot');
+			$('.skills-dot').addClass('current-dot');
 		}
 	});
 
 	$('#about').click(function(){
 		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.about').fadeIn(200).addClass('current-slide');
+
+		$('.current-dot').removeClass('current-dot');
+		$('.about-dot').addClass('current-dot');
 	});
 
 	$('#education').click(function(){
 		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.education').fadeIn(200).addClass('current-slide');
+
+		$('.current-dot').removeClass('current-dot');
+		$('.education-dot').addClass('current-dot');
 	});
 
 	$('#work').click(function(){
 		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.work').fadeIn(200).addClass('current-slide');
+
+		$('.current-dot').removeClass('current-dot');
+		$('.experience-dot').addClass('current-dot');
 	});
 
 	$('#skills').click(function(){
 		$('.current-slide').fadeOut(0).removeClass('current-slide');
 		$('.skills').fadeIn(200).addClass('current-slide');
+
+		$('.current-dot').removeClass('current-dot');
+		$('.skills-dot').addClass('current-dot');
 	});
 });
 

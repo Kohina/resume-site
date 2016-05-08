@@ -38,8 +38,9 @@ body{
 }
 
 /* style the text on about me page */
-.letter {
+.letter, .letter a {
 	text-align: center;
+	color: #000000;
 }
 
 /* hide slides that are not current slide */
